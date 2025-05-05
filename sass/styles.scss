@@ -1,8 +1,7 @@
-// Variables
-$primary-color: #007bff;
-$dark-color: #343a40;
-$light-color: #f8f9fa;
-$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import "variables";
+@import "header";
+@import "footer";
+@import "navbar";
 
 // Mixins para animaciones
 @mixin fadeIn($duration: 1s) {
@@ -30,57 +29,6 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-  }
-}
-
-// Barra de navegación
-.navbar {
-  background-color: $light-color;
-  border-bottom: 1px solid #ccc;
-
-  .navbar-brand img {
-    height: 40px;
-  }
-
-  .nav-link {
-    color: $dark-color;
-    font-weight: 500;
-  }
-}
-
-// Secciones de contenido
-header {
-  position: relative;
-  .caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-
-    h1 {
-      @include fadeIn(1.2s);
-    }
-    p {
-      @include fadeIn(1.5s);
-    }
-    .btn {
-      margin-top: 10px;
-      @include fadeIn(1.5s);
-    }
-  }
-}
-
-// Footer
-footer {
-  background-color: $dark-color;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  a {
-    color: white;
-    margin: 0 10px;
   }
 }
 

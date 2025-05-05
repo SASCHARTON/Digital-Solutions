@@ -1,0 +1,13 @@
+.navbar {
+    background-color: $light-color;
+    border-bottom: 1px solid #ccc;
+  
+    .navbar-brand img {
+      height: 40px;
+    }
+  
+    .nav-link {
+      color: $dark-color;
+      font-weight: 500;
+    }
+  }
